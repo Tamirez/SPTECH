@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinha</title>
+    <link rel="stylesheet" href="./cruzadinha.css">
+</head>
+
+<body>
+    <div class="div_footer">
+        <u>
+            <h3 class="h3_selecionarP">Selecionar Pergunta:</h3>
+        </u>
+
+        <span class=" questao span_questao1" id="span_questoes"></span>
+
+        <select name="-selecione-" id="sel_questoes" class="sel_questoesCSS" onchange="selectQ()">
+            <option value="0">-selecione-</option>
+            <option id="opt_q1" value="1">Questão 1</option>
+            <option value="2">Questão 2</option>
+            <option value="3">Questão 3</option>
+            <option value="4">Questão 4</option>
+            <option value="5">Questão 5</option>
+            <option value="6">Questão 6</option>
+            <option value="7">Questão 7</option>
+            <option value="8">Questão 8</option>
+            <option value="9">Questão 9</option>
+            <option value="10">Questão 10</option>
+            <option value="11">Questão 11</option>
+            <option value="12">Questão 12</option>
+            <option value="13">Questão 13</option>
+            <option value="14">Questão 14</option>
+            <option value="15">Questão 15</option>
+            <option value="16">Questão 16</option>
+        </select>
+
+
+
+
+        <div class="div_resposta">
+            <span>Resposta:<input type="text" class="inp_respostaCSS" id="inp_resposta" autofocus></span>
+            <button onclick="enter()">Enter</button>
+        </div>
+    </div>
+    <div class="div_cruzadinha">
+        <div class="item_invi"></div>
+        <div class="item_invi3">3</div>
+        <div class="item_invi"></div>
+        <div class="item_invi5">5</div>
+        <div class="item_invi"></div>
+        <div class="item_invi2">2</div>
+        <div class="div_item" id="ULA_1">U</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADOCORE_1">Q</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi8">8</div>
+        <div class="div_item" id="REGISTRADORES_1">R</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ROM_1">R</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ULA_2">L</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi11">11</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADCORE_2">U</div>
+        <div class="item_invi"></div>
+        <div class="item_invi6">6</div>
+        <div class="div_item" id="MEMORIADEMASSA_1">M</div>
+        <div class="div_item" id="MEMORIADEMASSA_2">E</div>
+        <div class="div_item" id="MEMORIADEMASSA_3">M</div>
+        <div class="div_item" id="MEMORIADEMASSA_4">O</div>
+        <div class="div_item" id="MEMORIADEMASSA_5">R</div>
+        <div class="div_item" id="MEMORIADEMASSA_6">I</div>
+        <div class="div_item" id="MEMORIADEMASSA_7">A</div>
+        <div class="div_item" id="MEMORIADEMASSA_8">D</div>
+        <div class="div_item" id="MEMORIADEMASSA_9">E</div>
+        <div class="div_item" id="MEMORIADEMASSA_10">M</div>
+        <div class="div_item" id="MEMORIADEMASSA_11">A</div>
+        <div class="div_item" id="MEMORIADEMASSA_12">S</div>
+        <div class="div_item" id="MEMORIADEMASSA_13">S</div>
+        <div class="div_item" id="MEMORIADEMASSA_14">A</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="EPROM_1">E</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_3">G</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ROM_3">M</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="I5_2">5</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_2">U</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_2">N</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADCORE_4">D</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="EPROM_2">P</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="I7_1">I</div>
+        <div class="div_item" id="I7_2">7</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_3">A</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_3">D</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADOCORE_5">C</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="EPROM_3">R</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_5">S</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_4">L</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_4">R</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADCORE_6">O</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="EPROM_4">O</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_6">T</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi10">10</div>
+        <div class="div_item" id="CS_1">C</div>
+        <div class="div_item" id="CS_2">S</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_5">E</div>
+        <div class="item_invi"></div>
+        <div class="item_invi4">4</div>
+        <div class="div_item" id="RAM_1">R</div>
+        <div class="div_item" id="RAM_2">A</div>
+        <div class="div_item" id="RAM_3">M</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_7">R</div>
+        <div class="item_invi"></div>
+        <div class="item_invi12">12</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_6">O</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_6">S</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="QUADCORE_8">E</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_8">A</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DATABUS_1">D</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_7">R</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_7">S</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi9">9</div>
+        <div class="div_item" id="DMA_1">D</div>
+        <div class="div_item" id="DMA_2">M</div>
+        <div class="div_item" id="DMA_3">A</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DUALCORE_8">E</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_8">B</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_10">O</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DATABUS_3">T</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi1">1</div>
+        <div class="div_item" id="CPU_1">C</div>
+        <div class="div_item" id="CPU_2">P</div>
+        <div class="div_item" id="CPU_3">U</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_11">R</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DATABUS_4">A</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="ANDRESSBUS_10">S</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="REGISTRADORES_12">E</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DATABUS_5">B</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi7">7</div>
+        <div class="div_item" id="REGISTRADORES_13">S</div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="DATABUS_6">U</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="div_item" id="FLASH_1">F</div>
+        <div class="div_item" id="FLASH_2">L</div>
+        <div class="div_item" id="FLASH_3">A</div>
+        <div class="div_item" id="FLASH_4">S</div>
+        <div class="div_item" id="FLASH_5">H</div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+        <div class="item_invi"></div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    var quest;
+    function selectQ() {
+         quest = sel_questoes.value;
+        
+        if (quest == 0) {
+            span_questoes.innerHTML = ''
+        }
+
+        else if (quest == 1) {
+            span_questoes.innerHTML = 'Qual componente no qual realiza as instruções de um programa de computador?'
+        }
+
+        else if (quest == 2) {
+            span_questoes.innerHTML = 'circuito digital que realiza operações de adição e booleana'
+        }
+
+        else if (quest == 3) {
+            span_questoes.innerHTML = 'Memoria dentro do processador que armazena bits '
+        }
+
+        else if (quest == 4) {
+            span_questoes.innerHTML = 'Transportador de dados e informações que grava e regrava dados junto ao processador. Volatil'
+        }
+
+        else if (quest == 5) {
+            span_questoes.innerHTML = 'Memoria de somente leitura que guarda dados da inicialização do computador'
+        }
+
+        else if (quest == 6) {
+            span_questoes.innerHTML = 'Memoria não Volatil que grava dados somente quando tem energia'
+        }
+
+        else if (quest == 7) {
+            span_questoes.innerHTML = 'memoria volatil que armazena dados mesmo sem energia'
+        }
+
+        else if (quest == 8) {
+            span_questoes.innerHTML = 'memoria que armazena grande quantidades de informações'
+        }
+
+        else if (quest == 9) {
+            span_questoes.innerHTML = 'componente que permite o acesso ao hardware acesse a memoria do sistema para leitura e escrita'
+        }
+
+        else if (quest == 10) {
+            span_questoes.innerHTML = 'Coponente utilizado para selecionar um dos circuitos integrados dentre vários conectados ao mesmo barramento de computador'
+        }
+
+        else if (quest == 11) {
+            span_questoes.innerHTML = 'dispositivo habilitado para acesso direto à memória, para localizar o endereço físico para comunicar comandos de leitura / gravação'
+        }
+
+        else if (quest == 12) {
+            span_questoes.innerHTML = 'componente usado para transferir dados entre componentes de um computador'
+        }
+
+        else if (quest == 13) {
+            span_questoes.innerHTML = 'processadores da Intel destinada a desktop x86-64 que aborda a utilização da microarquitetura Nehalem, inicialmente com socket 1156'
+        }
+
+        else if (quest == 14) {
+            span_questoes.innerHTML = 'processador Intel para desktop e notebooks x86-64 (64 bits), lançada com microarquitetura Intel Nehalem, inicialmente com socket 1366'
+        }
+
+        else if (quest == 15) {
+            span_questoes.innerHTML = 'Nome dado ao processador que tem dois núcleos'
+        }
+
+        else if (quest == 16) {
+            span_questoes.innerHTML = 'Nome dado ao processador que tem quatro núcleos'
+        }
+    }
+
+    function showLetter(letra) {
+        letra.style.textIndent='1px'
+    }
+
+    function enter() {
+        var resposta = inp_resposta.value.toUpperCase();
+
+        // letra_U.style.textIndent='1px'
+        if (resposta == 'CPU' && quest == '1') {
+           showLetter(CPU_1)
+           showLetter(CPU_2)
+           showLetter(CPU_3)
+        }
+        
+        else if (resposta == 'ULA' && quest == '2') {
+            showLetter(ULA_1)
+            showLetter(ULA_2)
+            showLetter(MEMORIADEMASSA_7)
+        }
+
+        else if (resposta == 'REGISTRADORES' && quest == '3') {
+            showLetter(REGISTRADORES_1)
+            showLetter(MEMORIADEMASSA_2)
+            showLetter(REGISTRADORES_3)
+            showLetter(I7_1)
+            showLetter(REGISTRADORES_5)
+            showLetter(REGISTRADORES_6)
+            showLetter(REGISTRADORES_7)
+            showLetter(REGISTRADORES_8)
+            showLetter(DMA_1)
+            showLetter(REGISTRADORES_10)
+            showLetter(REGISTRADORES_11)
+            showLetter(REGISTRADORES_12)
+            showLetter(REGISTRADORES_13)
+        }
+
+        else if(resposta == 'RAM' && quest == '4') {
+            showLetter(RAM_1)
+            showLetter(RAM_2)
+            showLetter(RAM_3)
+        }
+
+        else if(resposta == 'ROM' && quest == '5') {
+            showLetter(ROM_1)
+            showLetter(MEMORIADEMASSA_4)
+            showLetter(ROM_3)
+        }
+
+        else if(resposta == 'EPROM' && quest == '6') {
+            showLetter(EPROM_1)
+            showLetter(EPROM_2)
+            showLetter(EPROM_3)
+            showLetter(EPROM_4)
+            showLetter(RAM_3)
+        }
+
+        else if(resposta == 'FLASH' && quest == '7') {
+            showLetter(FLASH_1)
+            showLetter(FLASH_2)
+            showLetter(FLASH_3)
+            showLetter(FLASH_4)
+            showLetter(FLASH_5)
+        }
+
+        else if(resposta == 'MEMORIA DE MASSA' && quest == '8') {
+            showLetter(MEMORIADEMASSA_1)
+            showLetter(MEMORIADEMASSA_2)
+            showLetter(MEMORIADEMASSA_3)
+            showLetter(MEMORIADEMASSA_4)
+            showLetter(MEMORIADEMASSA_5)
+            showLetter(MEMORIADEMASSA_6)
+            showLetter(MEMORIADEMASSA_7)
+            showLetter(MEMORIADEMASSA_8)
+            showLetter(MEMORIADEMASSA_9)
+            showLetter(MEMORIADEMASSA_10)
+            showLetter(MEMORIADEMASSA_11)
+            showLetter(MEMORIADEMASSA_12)
+            showLetter(MEMORIADEMASSA_13)
+            showLetter(MEMORIADEMASSA_14)
+        }
+
+        else if(resposta == 'DMA' && quest == '9') {
+            showLetter(DMA_1)
+            showLetter(DMA_2)
+            showLetter(DMA_3)
+        }
+
+        else if(resposta == 'CS' && quest == '10') {
+            showLetter(CS_1)
+            showLetter(CS_2)
+        }
+
+        else if(resposta == 'ANDRESS BUS' && quest == '11') {
+            showLetter(MEMORIADEMASSA_11)
+            showLetter(ANDRESSBUS_2)
+            showLetter(ANDRESSBUS_3)
+            showLetter(ANDRESSBUS_4)
+            showLetter(ANDRESSBUS_5)
+            showLetter(ANDRESSBUS_6)
+            showLetter(ANDRESSBUS_7)
+            showLetter(ANDRESSBUS_8)
+            showLetter(CPU_3)
+            showLetter(ANDRESSBUS_10)
+        }
+
+        else if(resposta == 'DATA BUS' && quest == '12') {
+            showLetter(DATABUS_1)
+            showLetter(DMA_3)
+            showLetter(DATABUS_3)
+            showLetter(DATABUS_4)
+            showLetter(DATABUS_5)
+            showLetter(DATABUS_6)
+            showLetter(FLASH_4)
+        }
+
+        else if(resposta == 'I5' && quest == '13') {
+            showLetter(MEMORIADEMASSA_6)
+            showLetter(I5_2)
+        }
+
+        else if(resposta == 'I7' && quest == '14') {
+            showLetter(I7_1)
+            showLetter(I7_2)
+        }
+
+        else if( resposta == 'DUAL CORE' && quest== '15') {
+            showLetter(MEMORIADEMASSA_8)
+            showLetter(DUALCORE_2)
+            showLetter(DUALCORE_3)
+            showLetter(DUALCORE_4)
+            showLetter(CS_1)
+            showLetter(DUALCORE_6)
+            showLetter(DUALCORE_7)
+            showLetter(DUALCORE_8)
+        }
+
+        else if(resposta == 'QUAD CORE' && quest == '16') {
+            showLetter(QUADCORE_1)
+            showLetter(QUADCORE_2)
+            showLetter(MEMORIADEMASSA_14)
+            showLetter(QUADCORE_4)
+            showLetter(QUADCORE_5)
+            showLetter(QUADCORE_6)
+            showLetter(RAM_1)
+            showLetter(QUADCORE_8)
+        }
+
+        else {
+            alert('Resposta errada, tente novamente!')
+        }
+        
+
+
+    }
+
+
+</script>
