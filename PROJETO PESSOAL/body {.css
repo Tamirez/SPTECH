@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main_card {
+	color: #fff;
+	width: px;
+	height: 390px;
+	margin: 50px auto;
+	display: webkit-box;
+	display: ms-flexbox;
+	display: flex;
+	max-width: 1010px;
+	background: black;
+	
+	/* -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.3); 
+	        box-shadow: 0 0 40px rgba(0,0,0,0.3); */
+}
+
+.card_left {
+	width: 90%;
+}
+
+.card_datails {
+	width: 90%;
+	padding: 30px;
+	margin-top: -30px;
+}
+.card_datails  h1 {
+    font-family: monospace;
+	font-size: 25px;
+}
+.card_right img {
+	height: 390px;
+	border-radius: 2px;
+}
+.card_right {
+	border-radius: 2px;
+}
+
+.card_cat {
+	width: 80%;
+	display: -webkit-box;
+	/* display: -ms-flexbox; */
+	display: flex;
+    justify-content: last baseline;
+}
+
+.PG, .year, .genre, .time {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: fff;
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 5PX;
+}
+
+.PG {
+	background: #2dd63e;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.1);
+	        box-shadow: 0 0 50px rgba(0,0,0,0.1);
+	-webkit-transition: 300ms ease-in-out;
+}
+
+.disc {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 100;
+	line-height: 27px;
+}
+a {
+	color: red;
+	display: block;
+	text-decoration: none;
+}
+.social-btn {
+	margin-left: -10px;
+}
+button {
+	color: rgba(255, 255, 255, 0.418);
+	border: none;
+	padding: 20px;
+	outline: none;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-left: 10px;
+	background: #dee2df;
+	border-radius: 12px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	-webkit-transition: 300ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+}
+
+button:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+.play_btn {
+	height: 100%;
+	margin: -394px auto;
+	position: relative;
+	text-align: center;
+	
+	box-shadow: 0 0 50px rgba(0,0,0,0.2);
+}
+.fa-play-circle {
+	color: rgb(85, 34, 81);
+	font-size: 160px;
+	margin-top: 110px;
+	-webkit-animation: bounce 1.0s -0.4s infinite;
+	        animation: bounce 1.0s -0.4s infinite;
+}
+
+.fa-play-circle:hover {
+	color:blue;
+	animation: bounce 0.4s infinite;
+}
+@-webkit-keyframes bounce {
+  8% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.8);
+    -webkit-transform: scale2);
+    opacity: 0;
+		}
+}
+
+@keyframes bounce {
+  8% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.8);
+    -webkit-transform: scale2);
+    opacity: 0;
+		}
+}
+
+
+
+
+
+
+
+
+
+
