@@ -113,8 +113,7 @@ nav ul li a:hover {
   background: #808080;
   border-radius: 10px;
   transition: background 0.8s;
-
-  background: #000;
+ background: #000;
   box-shadow: 0 70px 63px -60px #000;
   display: flex;
   justify-content: center;
