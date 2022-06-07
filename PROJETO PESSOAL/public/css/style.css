@@ -1,0 +1,227 @@
+/* FONTES  */
+@font-face {
+  font-family: Movie--Poster--Personal;
+  src: url(../fontes/Movie\ Poster\ Personal\ Use.ttf);
+}
+
+@font-face {
+  font-family: Bohemian-Typewriter;
+  src: url(../fontes/Bohemian\ Typewriter.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bohemian-Typewriter;
+  color: black;
+  border: none;
+}
+
+
+body {
+ width: 100%;
+  background-image: url(loginecadastro.jpg);
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+
+/* BARRA DO MENU */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.19091386554621848) 0%, rgba(0, 0, 0, 1) 0%, rgba(6, 6, 6, 0.49343487394957986) 0%);
+  border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+  padding: 15px;
+  height: 80px;
+  float: left;
+  font-size: 40px;
+  color: #EEAD2D;
+  font-family: Movie--Poster--Personal;
+  margin-left: -5%;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #EEAD2D;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  border-radius: 200px;
+  border: fixed #EEAD2D;
+} 
+
+
+/* FORMULARIO */
+
+.alerta_erro{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_erro {
+  display: none;
+  background-color: #fff;
+  color: black;
+  width: 230px;
+  position: fixed;
+  border-radius: 4px;
+  border: #e6005a 3px solid;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.card_erro #mensagem_erro{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.formulario .tipo_campo {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* CARDS INPUTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bohemian-Typewriter;
+  color: black;
+  border: none;
+}
+
+input,
+label {
+  display: block;
+  width: 100%;
+}
+
+input:focus,
+label:focus {
+  outline: none;
+}
+
+a {
+  color: #fbb034;
+}
+
+
+
+/* FORMULARIO */
+
+#main-container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.09427521008403361) 0%, rgba(252, 252, 252, 0.6292892156862745) 29%);
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 9%;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid black;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-bottom: 2px solid #fbb034;
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fbb034;
+  transition: .5s;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+agreement,
+#agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+

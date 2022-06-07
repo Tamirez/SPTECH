@@ -1,0 +1,106 @@
+/* FONTES  */
+@font-face {
+    font-family: Movie--Poster--Personal;
+    src: url(FONTES/Movie\ Poster\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: Bohemian-Typewriter;
+    src: url(FONTES/Bohemian\ Typewriter.ttf);
+}
+
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bohemian-Typewriter;
+    color: black;
+    border: none;
+}
+
+body {
+    background-image: url(./IMAGENS/LOGIN.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #fbb034;
+}
+
+/* CONTAINER LOGIN */
+
+#login-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.09427521008403361) 0%, rgba(252,252,252,0.6292892156862745) 29%);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #fbb034;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fbb034;
+    transition: .5s;
+}
+
+/* REGISTRAR */
+
+#register-container p {
+    margin-bottom: 10px;
+}

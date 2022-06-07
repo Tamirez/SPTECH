@@ -1,0 +1,250 @@
+/* FONTES  */
+@font-face {
+  font-family: Movie--Poster--Personal;
+  src: url(../fontes/Movie\ Poster\ Personal\ Use.ttf);
+}
+
+@font-face {
+  font-family: Bohemian-Typewriter;
+  src: url(../fontes/Bohemian\ Typewriter.ttf);
+}
+
+
+/*home e navbar*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Bohemian-Typewriter;
+  background: rgb(0, 0, 0);
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url(../imagens/bannerhome.jpg);
+  background-size: cover;
+  /*COBRE O FUNDO, SO O COMEÇO DA PAGINA (HEADER)*/
+}
+
+/* BARRA DO MENU */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.19091386554621848) 0%, rgba(0, 0, 0, 1) 0%, rgba(6, 6, 6, 0.49343487394957986) 0%);
+  border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+  padding: 15px;
+  height: 80px;
+  float: left;
+  font-size: 40px;
+  color: #EEAD2D;
+  font-family: Movie--Poster--Personal;
+  margin-left: -5%;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #EEAD2D;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  border-radius: 200px;
+  border: fixed #EEAD2D;
+}
+
+/* CARDS DOS INVENTORES */
+.container {
+  height: 100vh;
+  width: 40%;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  margin-left: -50px;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+
+
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover {
+  border: 1px solid #fff;
+}
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+ background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+
+.card1 {
+  background: url("../imagens/louislumiere.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card1:hover {
+  background: url("../imagens/louislumiere.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card1:hover .fa {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../imagens/augustlumiere.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card2:hover {
+  background: url("../imagens/augustlumiere.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2 {
+  opacity: 1;
+}
+
+.card2:hover .fa {
+  opacity: 1;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* BOTÃO */   /* CSS */
+.button-85 {
+font-family: Bohemian-Typewriter;
+margin-top:40%;
+  margin-left: 5%;
+  align-items:center ;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  height: 6%;
+}
+
+.button-85:before {
+  content: "";
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.histcinema {
+width: 80%;
+height: 80%;
+margin-left: 10%;
+line-height: 1.5; /*espaçamento entre linhas*/
+
+}
+
+.histcinema p {
+  color: #fff;
+  font-size: large;
+  text-align:justify;
+  font-family: Bohemian-Typewriter;
+}
+
+
+
+
