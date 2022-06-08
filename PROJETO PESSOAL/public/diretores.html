@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/diretores.css">
   <link href="./JS/funcoes.js">
-  <title>Document</title>
+  <title>Diretores</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -81,7 +83,7 @@
               escreveu seu
               primeiro roteiro, Captain Peachfuzz and the Anchovy Bandit — algo como Capitão Flocos de Pêssego e o
               Bandido de Anchovas.
- </p></b>
+          </p></b>
           <!--DESCRIÇÃO DIRETOR -->
 
         </div>
@@ -115,14 +117,16 @@
           <figcaption>Tim Burton</figcaption>
         </figure>
         <div class="txtdir2">
-          <p><b> Timothy Tim Walter Burton  (Burbank, 25 de agosto de 1958) é um cineasta, produtor, roteirista, 
-            animador e desenhista norte-americano. Filmes com aspectos góticos, fantasiosos, excêntricos ou sombrios. 
-            Amante dos grandes nomes dos filmes de terror, já realizou projetos sobre Ed Wood e chamou para estrelar seus trabalhos, 
-            os notórios atores Vincent Price e Christopher Lee, seus ídolos. 
-            Após o colegial, ele ganhou uma bolsa da Disney para estudar no Instituto das Artes da Califórnia em Valencia, Califórnia. 
-            Ele estudou Animação por 3 anos e foi então contratado pelo Walt Disney como aprendiz de animador.
-            Seu 1° sucesso foi Os Fantasmas se Divertem (Beetlejuice) e levou o Óscar de Melhor Maquiagem 
-            </p></b>
+          <p><b> Timothy Tim Walter Burton (Burbank, 25 de agosto de 1958) é um cineasta, produtor, roteirista,
+              animador e desenhista norte-americano. Filmes com aspectos góticos, fantasiosos, excêntricos ou sombrios.
+              Amante dos grandes nomes dos filmes de terror, já realizou projetos sobre Ed Wood e chamou para estrelar
+              seus trabalhos,
+              os notórios atores Vincent Price e Christopher Lee, seus ídolos.
+              Após o colegial, ele ganhou uma bolsa da Disney para estudar no Instituto das Artes da Califórnia em
+              Valencia, Califórnia.
+              Ele estudou Animação por 3 anos e foi então contratado pelo Walt Disney como aprendiz de animador.
+              Seu 1° sucesso foi Os Fantasmas se Divertem (Beetlejuice) e levou o Óscar de Melhor Maquiagem
+          </p></b>
           <!--DESCRIÇÃO DIRETOR -->
 
         </div>
@@ -147,9 +151,61 @@
 
     </div>
   </div>
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+  </body>
+  <script>
+    const labels = [
+      'Robert Zemeckis',
+      'Quentin Tarantino',
+      'Tim Burton',
+      
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Diretores Preferidos dos Usuários ',
+        backgroundColor: 'rgb(238, 173, 45)',
+        borderColor: 'rgb(238, 173, 45)',
+        data: [20, 50, 60],
+      }]
+    };
+  
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {}
+    };
+  </script>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
 
 
 
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
+
+  
+
+
+  

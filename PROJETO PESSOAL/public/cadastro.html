@@ -33,8 +33,7 @@
             <li id="uli1"><a href="index.html#sobre">S O B R E</a></li>
             <div class="barra"></div>
 
-            <li id="uli2"><a href="#">R A N K I N G</a></li>
-            <div class="barra"></div>
+           
 
             <li id="uli3"><a href="login.html">L O G I N</a></li>
             <div class="barra"></div> 
@@ -77,6 +76,15 @@
                     placeholder="Confirme sua senha">
             </div>
 
+            <div class="selecao">
+                <select id="sel_diretor" class="sel_selecao">
+                    <option value="escolha um diretor">Diretor Favorito:</option>
+                    <option value="1">Robert Zemeckis</option>
+                    <option value="2">Quentin Tarantino</option>
+                    <option value="3">Tim Burton</option>
+                </select>
+            </div>
+
             <!-- BOTÃO REGISTRAR -->
             <div class="full-box">
                 <input type="submit" onclick="cadastrar()" value="Registrar">
@@ -89,7 +97,7 @@
 
         </form>
     </div>
-    <!-- COLOCAR O SELECT DIRETORES -->
+    
 </body>
 
 </html>
@@ -104,8 +112,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var diretorVar = sel_diretor.value;
 
-        if (emailVar == "" || nomeVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (emailVar == "" || nomeVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || diretorVar =="" ) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
@@ -147,7 +156,8 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                diretorServer: diretorVar
             })
         }).then(function (resposta) {
 
