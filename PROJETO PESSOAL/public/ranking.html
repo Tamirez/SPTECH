@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ranking.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/UCL.png">
+    <title>Maiores Campeões da UCL</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!-- MENU TRASPARENTE  -->
+
+  <nav id="nav">
+    <!--NAV-->
+    <div class="logo">CULT DIRECTORS</div>
+    <!--NAV LOGO-->
+    <ul>
+        <!--NAV UL-->
+        <li id="uli"><a href="#">H O M E</a></li>
+        <div class="barra"></div>
+
+        <!--NAV UL LI A-->
+        <li id="uli1"><a href="#">S O B R E</a></li>
+        <div class="barra"></div>
+
+        <li id="uli2"><a href="#">R A N K I N G</a></li>
+        <div class="barra"></div>
+
+        <li id="uli3"><a href="#">L O G I N</a></li>
+        <div class="barra"></div> 
+    </ul>
+</nav>
+
+
+
+    <!-- Principal -->
+    <main id="p1" class="conteudo">
+        <section class="conteudo-principal">
+            
+
+            <div class="conteudo-principal-caixa">
+                <div class="caixa transicao">
+                    <label>
+                        <img class="conteudo-principal-imagem transicao" src="./assets/imgs/cr7141.png"
+                            alt="Imagem do Jogador Citado">
+                        <h2 class="conteudo-principal-titulo transicao">Cristiano Ronaldo - 5 Títulos</h2>
+                        <input type="radio" id="CR7" name="linguagens" value="32">
+                    </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/di stefano.jpg"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Di Stéfano - 5 Títulos</h2>
+                    <input type="radio" id="DISTEF" name="linguagens" value="12">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/maldini.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Maldini - 5 Títulos</h2>
+                    <input type="radio" id="MALDINI" name="linguagens" value="22">
+                </label>
+                </div>
+
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/sergio ramos.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Sergio Ramos - 4 Títulos</h2>
+                    <input type="radio" id="SERGIO" name="linguagens" value="26">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/messi.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Messi - 4 Títulos</h2>
+                    <input type="radio" id="MESSI" name="linguagens" value="28">
+                </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo-principal2">
+            <div class="conteudo-principal-caixa">
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/benzema.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Benzema - 4 Títulos</h2>
+                    <input type="radio" id="BENZEMA" name="linguagens" value="5">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/casillas.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Casillas - 3 Títulos</h2>
+                    <input type="radio" id="CASILLAS" name="linguagens" value="6">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/zidane.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao">Zidane - 1 Títulos</h2>
+                    <input type="radio" id="ZIDANE" name="linguagens" value="7">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                  <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/bruxo.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao" >Ronaldinho - 1 Títulos</h2>
+                    <input type="radio" id="BRUXO" name="linguagens" value="8">
+                </label>
+                </div>
+                <div class="caixa transicao">
+                    <label>
+                    <img class="conteudo-principal-imagem transicao" src="./assets/imgs/lewa.png"
+                        alt="Imagem do Jogador Citado">
+                    <h2 class="conteudo-principal-titulo transicao" >Lewandowski - 1 Títulos</h2>
+                    <input type="radio" id="LEWA" name="linguagens" value="9">
+                </label>
+                </div>
+            </div>
+            <button class="conteudo-principal-escrito-botao2 transicao2" onclick="confirmarVoto()">Confirmar Voto</button>
+        </section>
+
+        <section class="conteudo-principal3">
+
+            <canvas id="myChart" class="grafico" style="background-color:white;"></canvas><center>
+            <button class="conteudo-principal-escrito-botao3 transicao2" onclick="criar()">Atualizar Votação</button>
+        </center>
+        
+        </section>
+
+
+    
+</body>
+
+</html>
+
+<script>
+         //Cumprindo Requisito de uso de VAR
+           
+    var myChart = undefined
+    var CR7Var = Number(CR7.value)
+    var DISTEFVar = Number(DISTEF.value)
+    var MALDINIVar = Number(MALDINI.value)
+    var SERGIOVar = Number(SERGIO.value)
+    var MESSIVar = Number(MESSI.value) 
+    var BENZEMAVar = Number(BENZEMA.value)
+    var CASILLASVar = Number(CASILLAS.value)  
+    var ZIDANEVar = Number(ZIDANE.value)
+    var BRUXOVar = Number(BRUXO.value)
+    var LEWANDOWSKIVar = Number(LEWA.value)
+
+    var votos = [CR7]
+
+    const labels = [
+        'CR7',
+        'DI STEFANO',
+        'MALDINI',
+        'SERGIO RAMOS',
+        'MESSI',
+        'BENZEMA',
+        'CASILLAS',
+        'ZIDANE',
+        'RONALDINHO',
+        'LEWANDOWSKI',
+    ];
+
+    // Cumprindo requisito do uso de Vetor
+
+    var votos = [CR7Var, DISTEFVar, MALDINIVar, SERGIOVar, MESSIVar, BENZEMAVar, CASILLASVar, ZIDANEVar, BRUXOVar, LEWANDOWSKIVar]
+
+    // Cumprindo o requisito de uso de função
+
+    function confirmarVoto(){
+
+        // Cumprindo requisito de calculo matemático 
+        if(CR7.checked){
+           votos[0] = votos[0] + 1
+        }
+        if(DISTEF.checked){
+           votos[1] = votos[1] + 1
+        }
+        if(MALDINI.checked){
+           votos[2] = votos[2] + 1
+        }
+        if(SERGIO.checked){
+           votos[3] = votos[3] + 1
+        }
+        if(MESSI.checked){
+           votos[4] = votos[4] + 1
+        }
+        if(BENZEMA.checked){
+           votos[5] = votos[5] + 1
+        }
+        if(CASILLAS.checked){
+           votos[6] = votos[6] + 1
+        }    
+        if(ZIDANE.checked){
+           votos[7] = votos[7] + 1
+        }
+        if(BRUXO.checked){
+           votos[8] = votos[8] + 1
+        }
+        if(LEWA.checked){
+           votos[9] = votos[9] + 1
+        }
+    
+    }
+
+    function criar() {
+
+        console.log(votos)
+
+        if (myChart != undefined) {
+            myChart.destroy();
+        }
+
+        var data = {
+            labels: labels,
+            datasets: [{
+                label: 'Votação Jogador mais Marcante da UCL',
+                backgroundColor: 'Blue',
+                borderColor: 'Blue',
+                data: votos,
+            }]
+        };
+
+        var config = {
+            type: 'bar',
+            data: data,
+            options: {}
+        };
+
+        myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    }
+
+    criar()
+
+</script>
+</html>

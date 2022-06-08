@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AcquaTec | Login</title>
+    <title> CultDirectors | Login</title>
 
     <script src="./js/funcoes.js"></script>
 
@@ -19,9 +19,7 @@
 </head>
 
 <body>
-
-
-    <!--Header-->
+<!--Header-->
 
     <nav id="nav">
         <!--NAV-->
@@ -29,17 +27,17 @@
         <!--NAV LOGO-->
         <ul>
             <!--NAV UL-->
-            <li id="uli"><a href="#">H O M E</a></li>
+            <li id="uli"><a href="index.html">H O M E</a></li>
             <div class="barra"></div>
 
             <!--NAV UL LI A-->
-            <li id="uli1"><a href="#">S O B R E</a></li>
+            <li id="uli1"><a href="index.html#sobre">S O B R E</a></li>
             <div class="barra"></div>
 
             <li id="uli2"><a href="#">R A N K I N G</a></li>
             <div class="barra"></div>
 
-            <li id="uli3"><a href="#">L O G I N</a></li>
+            <li id="uli3"><a href="login.html">L O G I N</a></li>
             <div class="barra"></div>
         </ul>
     </nav>
@@ -51,26 +49,26 @@
                 <span id="mensagem_erro"></span>
             </div>
         </div>
-        <div class="container">
+        <div id="login-container">
             <div class="card">
-                <h2>Olá de volta!</h2>
+                <h2></h2>
                 <div class="formulario">
 
 
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="Login">
+                    <span class="tipo_campo">E-mail:</span> <br><br>
+                    <input id="email_input" type="text" placeholder="Email do cadastro">
 
-                    <span class="tipo_campo">Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
+                    <span class="tipo_campo">Senha:</span> <br><br>
+                    <input id="senha_input" type="password" placeholder="Senha do cadastro">
 
-                    <button class="btn" onclick="entrar()">Entrar</button>
+                    <div class="full-box">
+                        <input type="submit" onclick="entrar()" value="Entrar">
+                    </div>
 
 
                 </div>
 
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
+               
 
                 <div id="cardErro" style="display: none;">
                     <div id="mensagem_erro"></div>
@@ -80,13 +78,7 @@
         </div>
     </div>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
-        </div>
-    </div>
-    <!--footer fim-->
+   
 
 </body>
 
@@ -103,24 +95,24 @@
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
+            // cardErro.style.display = "block"
+            alert = "Preencha todos os campos para prosseguir!";
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
-            cardErro.style.display = "block"
+            // cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
@@ -171,8 +163,8 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 
 </script>

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!-- MENU TRASPARENTE  -->
+   <!-- MENU TRASPARENTE  -->
 
     <nav id="nav">
         <!--NAV-->
@@ -26,18 +26,18 @@
         <!--NAV LOGO-->
         <ul>
             <!--NAV UL-->
-            <li id="uli"><a href="#">H O M E</a></li>
+            <li id="uli"><a href="index.html">H O M E</a></li>
             <div class="barra"></div>
 
             <!--NAV UL LI A-->
-            <li id="uli1"><a href="#">S O B R E</a></li>
+            <li id="uli1"><a href="index.html#sobre">S O B R E</a></li>
             <div class="barra"></div>
 
             <li id="uli2"><a href="#">R A N K I N G</a></li>
             <div class="barra"></div>
 
-            <li id="uli3"><a href="#">L O G I N</a></li>
-            <div class="barra"></div>
+            <li id="uli3"><a href="login.html">L O G I N</a></li>
+            <div class="barra"></div> 
         </ul>
     </nav>
 
@@ -96,7 +96,7 @@
 
 <script>
     function cadastrar() {
-        aguardar();
+        // aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -112,9 +112,9 @@
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
             cardErro.style.display = "block"
@@ -122,9 +122,9 @@
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         if (senhaVar != confirmacaoSenhaVar) {
             cardErro.style.display = "block"
@@ -132,9 +132,9 @@
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -154,11 +154,13 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                cardErro.style.display = "block"
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
+               
+                // cardErro.style.display = "block"
+                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
                 window.location = "login.html";
-                limparFormulario();
-                finalizarAguardar();
+                console.log("coisa")
+                // limparFormulario();
+                // finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }

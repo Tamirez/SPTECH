@@ -1,13 +1,13 @@
 /* FONTES  */
 @font-face {
     font-family: Movie--Poster--Personal;
-    src: url(FONTES/Movie\ Poster\ Personal\ Use.ttf);
-}
-
-@font-face {
+    src: url(../fontes/Movie\ Poster\ Personal\ Use.ttf);
+  }
+  
+  @font-face {
     font-family: Bohemian-Typewriter;
-    src: url(FONTES/Bohemian\ Typewriter.ttf);
-}
+    src: url(../fontes/Bohemian\ Typewriter.ttf);
+  }
 
 /* GERAL */
 
@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: url(./IMAGENS/LOGIN.jpg);
+    background-image: url(../imagens/loginecadastro.jpg);
     background-size: cover;
     background-position-y: -200px;
 }
@@ -36,8 +36,60 @@ a {
 }
 
 a:hover {
-    color: #fbb034;
+    color: white;
 }
+
+/* BARRA DO MENU */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.19091386554621848) 0%, rgba(0, 0, 0, 1) 0%, rgba(6, 6, 6, 0.49343487394957986) 0%);
+    border-bottom: 1px solid #fff;
+  }
+  
+  nav .logo {
+    padding: 15px;
+    height: 80px;
+    float: left;
+    font-size: 40px;
+    color: #EEAD2D;
+    font-family: Movie--Poster--Personal;
+    margin-left: -5%;
+  }
+  
+  nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    background-color: #EEAD2D;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    border-radius: 200px;
+    border: fixed #EEAD2D;
+  } 
+  
 
 /* CONTAINER LOGIN */
 
@@ -48,7 +100,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
-    margin-top: 10vh;
+    margin-top: 32vh;
     border-radius: 10px;
     text-align: center;
 }

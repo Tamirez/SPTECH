@@ -9,6 +9,9 @@
   src: url(../fontes/Bohemian\ Typewriter.ttf);
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 /*home e navbar*/
 body {
@@ -231,6 +234,7 @@ margin-top:40%;
 
 
 .histcinema {
+margin-top: -10%;
 width: 80%;
 height: 80%;
 margin-left: 10%;
